@@ -61,8 +61,8 @@ This repo is for educational purposes, and contributions are welcome! Feel free 
 ---
 
 ## 📞 Support & Questions
-- Reach out in the **Level Up in Tech Discord**  
-- Post your questions in the **cohort Slack channel**  
+- Reach out in the **Level Up in Tech Teams Channel**  
+- Post your questions in the **cohort Teams Channel**  
 - Open a **GitHub issue** if you encounter any problems  
 
 Let’s Level Up! 🚀💡  
