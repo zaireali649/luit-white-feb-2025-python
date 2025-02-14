@@ -55,6 +55,73 @@ pip install -r requirements.txt  # Install dependencies (if applicable)
 
 ---
 
+# Troubleshooting
+
+## ModuleNotFoundError: No module named 'matplotlib'
+
+If you encounter the following or similar error:
+
+```
+Traceback (most recent call last):
+  File "c:\Users\Ziggy\Dropbox\GitHub\luit-white-feb-2025-python\using_imports.py", line 2, in <module>
+    import matplotlib3.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+```
+
+### Solution:
+1. Ensure you have `matplotlib` installed. Run the following command in your terminal or command prompt:
+
+   ```
+   pip install matplotlib
+   ```
+
+2. If you're using a virtual environment, activate it first:
+
+   ```
+   # Windows (Command Prompt)
+   venv\Scripts\activate
+
+   # Windows (PowerShell)
+   venv\Scripts\Activate.ps1
+
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+   Then install `matplotlib` inside the virtual environment:
+
+   ```
+   pip install matplotlib
+   ```
+
+3. Double-check the import statement in your script. The correct import should be:
+
+   ```python
+   import matplotlib.pyplot as plt
+   ```
+
+   Ensure you are not using `matplotlib3.pyplot`, as that is incorrect.
+
+4. If the issue persists, try upgrading `pip` and reinstalling `matplotlib`:
+
+   ```
+   pip install --upgrade pip
+   pip uninstall matplotlib
+   pip install matplotlib
+   ```
+
+After following these steps, try running your script again.
+
+If you continue to experience issues, check your Python environment by running:
+
+```
+python -m pip show matplotlib
+```
+
+This should display installation details. If `matplotlib` is not found, reinstall it as shown above.
+
+---
+
 ## 📌 Contributing
 This repo is for educational purposes, and contributions are welcome! Feel free to submit pull requests for improvements or additional examples.
 
