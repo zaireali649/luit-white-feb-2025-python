@@ -26,10 +26,10 @@ def print_instance_ids(ec2_client):
         print(instance_id) 
 
 
+if __name__=="__main__":
+    ec2_c = get_ec2_client()
+    s3_client = get_s3_client()
 
-ec2_c = get_ec2_client()
-s3_client = get_s3_client()
-
-#print_bucket_names(s3_client)
-#print_bucket_names_json(s3_client)
-print_instance_ids(ec2_c)
+    print_bucket_names(s3_client)
+    print_bucket_names_json(s3_client)
+    print_instance_ids(ec2_c)
