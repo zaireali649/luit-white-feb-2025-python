@@ -10,9 +10,10 @@ def add_random(a, b):
 def add(a, b):
     return a + b
 
+if __name__=="__main__":
 
-x = random.randint(0, 3)
-y = random.randint(3, 10)
+    x = random.randint(0, 3)
+    y = random.randint(3, 10)
 
-print(x, y)
-add_random(x, y)
+    print(x, y)
+    add_random(x, y)
