@@ -1,3 +1,4 @@
+"""Script for testing list resources functions from AWS."""
 from helpers import *  # Importing necessary helper functions
 import json
 from typing import List
@@ -5,8 +6,7 @@ import boto3
 
 
 def print_bucket_names(s3_client: boto3.client) -> None:
-    """
-    Fetches and prints the names of all S3 buckets.
+    """Fetch and prints the names of all S3 buckets.
 
     Args:
         s3_client (boto3.client): A Boto3 S3 client instance.
@@ -20,8 +20,7 @@ def print_bucket_names(s3_client: boto3.client) -> None:
 
 
 def print_bucket_names_json(s3_client: boto3.client) -> None:
-    """
-    Fetches S3 bucket names and prints them in a JSON-formatted string.
+    """Fetch S3 bucket names and prints them in a JSON-formatted string.
 
     Args:
         s3_client (boto3.client): A Boto3 S3 client instance.
@@ -33,8 +32,7 @@ def print_bucket_names_json(s3_client: boto3.client) -> None:
 
 
 def print_instance_ids(ec2_client: boto3.client) -> None:
-    """
-    Fetches and prints the instance IDs of all EC2 instances.
+    """Fetch and prints the instance IDs of all EC2 instances.
 
     Args:
         ec2_client (boto3.client): A Boto3 EC2 client instance.
@@ -58,9 +56,9 @@ if __name__ == "__main__":
 
     # Print S3 bucket names
     print_bucket_names(s3_client)
-    
+
     # Print S3 bucket names in JSON format
     print_bucket_names_json(s3_client)
-    
+
     # Print EC2 instance IDs
     print_instance_ids(ec2_c)
