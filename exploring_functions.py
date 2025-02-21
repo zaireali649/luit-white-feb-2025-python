@@ -1,10 +1,10 @@
+"""Script for exploring passing parameters to functions."""
 import random
 from typing import Union
 
 
 def add_random(a: int, b: int) -> None:
-    """
-    Generates two random numbers within the given range and prints their sum.
+    """Generate two random numbers within the given range and prints their sum.
 
     Args:
         a (int): The lower bound (inclusive) for random number generation.
@@ -17,8 +17,7 @@ def add_random(a: int, b: int) -> None:
 
 
 def add(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
-    """
-    Returns the sum of two numbers.
+    """Return the sum of two numbers.
 
     Args:
         a (int | float): The first number.
